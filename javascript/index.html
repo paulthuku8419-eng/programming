@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 10 - DOM Manipulation</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    button { margin: 5px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h3>JavaScript DOM Manipulation Demo</h3>
+
+  <p id="text">This is a paragraph.</p>
+  <button id="changeTextBtn">Change Text</button>
+
+  <button id="bgBtn">Change Background</button>
+
+  <h2>My List</h2>
+  <ul id="myList">
+    <li>Item 1</li>
+  </ul>
+  <button id="addItemBtn">Add Item</button>
+
+  <script>
+    // Select elements
+    let text = document.getElementById("text");
+    let changeTextBtn = document.getElementById("changeTextBtn");
+    let bgBtn = document.getElementById("bgBtn");
+    let list = document.getElementById("myList");
+    let addItemBtn = document.getElementById("addItemBtn");
+
+    // Change text
+    changeTextBtn.addEventListener("click", () => {
+      text.textContent = "The text has been changed!";
+    });
+
+    // Change background color
+    bgBtn.addEventListener("click", () => {
+      document.body.style.backgroundColor = "lightblue";
+    });
+
+    // Add new list item
+    addItemBtn.addEventListener("click", () => {
+      let newItem = document.createElement("li");
+      newItem.textContent = "New Item";
+      list.appendChild(newItem);
+    });
+    </script>
+</body>
+</html>

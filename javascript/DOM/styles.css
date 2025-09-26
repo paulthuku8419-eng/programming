@@ -1,0 +1,10 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display:inline-block;
+    background-color: aqua;
+}
+input{
+    size: 50px;
+}
+
