@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+     <style>
+        body{
+            background-color: rgb(201, 201, 240);
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Application form</h1>
+        <p>Please complete all the required fields before submitting</p>
+    </header>
+    <main>
+    <form action="index.html" method="post" >
+        <!--personal information section-->
+        <fieldset>
+            <legend>personal information</legend>
+        <label for="name">full name</label>
+        <input type="text" id="name" placeholder="name" required><br>
+        <label for="username">username</label>
+        <input type="text" id="username" placeholder="paulthuku8419@gmail.com" required><br>
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="12345678" required><br>
+        <label for="phone number">telephone</label>
+        <input type="phone number" id="tel" placeholder="0712-345-678"><br> 
+        </fieldset>
+        <!--account details-->
+        <fieldset>
+            <legend>Account details</legend>
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="username" required><br>
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="password" required><br>
+            <label for="confirm password">confirm password</label>
+            <input type="confirm password" id="confirm password" placeholder="confirm password" required><br>
+        </fieldset>
+        <!--preference section-->
+        <fieldset>
+            <legend>preferences</legend>
+            <label for="newsletter">subscribe to the newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <p>
+                preferred contact method
+            </p>
+            <label><input type="radio" name="contact method" value="email"checked>email</label>
+            <label><input type="radio" name="contact method" value="phone">phone</label>
+        </fieldset>
+        <!--submission-->
+        <fieldset>
+            <legend>submission</legend>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            </fieldset>
+            </form>
+            </main>
+</body>
+<footer><p>&copy;2025 form</p></footer>
+</html>
