@@ -1,53 +1,16 @@
-Project Overview
+# React + Vite
 
-Cyner-Tech is a modern, responsive website showcasing mechanical engineering services and web development solutions. Built with React, Vite, and Tailwind CSS, it provides a professional platform for clients to explore services, view projects, and contact the team.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Features
+Currently, two official plugins are available:
 
-Fully responsive design for desktop, tablet, and mobile
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Hero & Services sections highlighting offerings
+## React Compiler
 
-Reusable React components for modularity and maintainability
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Tailwind CSS utility-first styling for rapid development
+## Expanding the ESLint configuration
 
-Contact form for client inquiries
-
-Tech Stack
-
-Frontend: React + Vite
-
-Styling: Tailwind CSS
-
-Linting: ESLint
-
-Bundler & Dev Server: Vite
-installation
-# Clone the repository
-git clone https://github.com/paulthuku8419-eng/cyner-tech.git
-cd cyner-tech/cyner-tech
-git clone https://github.com/paulthuku8419-eng/cyner-tech.git
-cd cyner-tech/cyner-tech
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-structure
-cyner-tech/
-├─ public/           # Static assets
-├─ src/              # React components and pages
-│  ├─ components/    # Reusable UI components
-│  └─ App.jsx
-├─ index.html        # Entry HTML file
-├─ package.json      # Scripts & dependencies
-├─ tailwind.config.js# Tailwind configuration
-└─ vite.config.js    # Vite configuration
-
-scripts
-npm run dev	Start Vite development server
-npm run build	Build production-ready site
-npm run preview	Preview production build locally
-npm run lint	Run ESLint
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
